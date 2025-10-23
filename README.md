@@ -12,3 +12,11 @@ Run the next commands:
 1. `python3 -m virtualenv venv`
     1. *Note*: Don't forget to add the `env` folder into the `.gitignore` file.
 1. `.\venv\Scripts\activate`
+1. `poetry env use .\venv\Scripts\python3.exe`
+1. `poetry install --no-root`
+1. `Invoke-Expression (poetry env activate)`
+1. `poetry run python3 -m ipykernel install --user --name=agents-with-langchain --display-name "Agents with LangChain"`
+
+To run scripts:
+
+1. `poetry run python3 .\main.py`
